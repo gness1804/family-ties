@@ -3,7 +3,13 @@ import React, { Component } from 'react';
 class Tree extends Component {
 
   addNewPerson(Node) {
-    const foo = new Node({firstName: this.firstName.value});
+    const foo = new Node(
+      {
+        firstName: this.firstName.value || '',
+        lastName: this.lastName.value || '',
+        gender: this.gender.value || '',
+        maiden: this.maiden.value || '',
+      });
     // console.log(this.firstName.value);
     console.log(foo);
   }
