@@ -29,7 +29,7 @@ class Tree extends Component {
         spouse3: this.spouse3.value || '',
         spouseOther: this.spouseOther.value || '',
       };
-    // console.log(person);
+    //add person by passing in just this object
   }
 
   render() {
