@@ -5,6 +5,7 @@ class Tree extends Component {
   addNewPerson(Node) {
     const foo = new Node(
       {
+        masterId: `${this.firstName.value}${this.lastName.value}`,
         firstName: this.firstName.value || '',
         lastName: this.lastName.value || '',
         gender: this.gender.value || '',
@@ -19,6 +20,7 @@ class Tree extends Component {
 
     class Node {
       constructor(options) {
+        this.masterId = options.masterId;
         this.firstName = options.firstName;
         this.lastName = options.lastName;
         this.fullName = `${options.firstName} ${options.lastName}`;
@@ -43,17 +45,6 @@ class Tree extends Component {
         this.spouseOther = options.spouseOther;
       }
     }
-
-    const DorothyTerwilliger = new Node(
-      {
-        firstName: 'Dorothy',
-        lastName: 'Terwilliger',
-        gender: 'F',
-        maiden: 'Feemster',
-        // childOldest: SusanTerwilliger,
-        // childSecondOldest: CurtTerwilliger;
-        // spouse1: GordonTerwilliger,
-      });
 
     return (
       <div>

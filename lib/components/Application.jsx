@@ -5,7 +5,7 @@ class Application extends Component {
   render() {
     return (
       <div>
-        I am the Application component.
+      <h2>Family Tree</h2>
         {this.props.children}
       </div>
     );
