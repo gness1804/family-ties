@@ -2,66 +2,7 @@ import React, { Component } from 'react';
 
 class Tree extends Component {
 
-  addNewPerson() {
-    const person =
-      {
-        masterId: `${this.firstName.value}${this.lastName.value}`,
-        firstName: this.firstName.value || '',
-        lastName: this.lastName.value || '',
-        fullName: `${this.firstName.value} ${this.lastName.value}`,
-        gender: this.gender.value || '',
-        maiden: this.maiden.value || '',
-        mother: this.mother.value || '',
-        father: this.father.value || '',
-        stepMother1: this.stepMother1.value || '',
-        stepMother2: this.stepMother2.value || '',
-        stepFather1: this.stepFather1.value || '',
-        stepFather2: this.stepFather2.value || '',
-        childOldest: this.childOldest.value || '',
-        childSecondOldest: this.childSecondOldest.value || '',
-        childThirdOldest: this.childThirdOldest.value || '',
-        childFourthOldest: this.childFourthOldest.value || '',
-        childFifthOldest: this.childFifthOldest.value || '',
-        childSixthOldest: this.childSixthOldest.value || '',
-        childOther: this.childOther.value || '',
-        spouse1: this.spouse1.value || '',
-        spouse2: this.spouse2.value || '',
-        spouse3: this.spouse3.value || '',
-        spouseOther: this.spouseOther.value || '',
-      };
-    // console.log(person);
-  }
-
   render() {
-
-
-    // class Node {
-    //   constructor(options) {
-    //     this.masterId = options.masterId;
-    //     this.firstName = options.firstName;
-    //     this.lastName = options.lastName;
-    //     this.fullName = options.fullName;
-    //     this.gender = options.gender;
-    //     this.maiden = options.maiden;
-    //     this.mother = options.mother;
-    //     this.father = options.father;
-    //     this.stepMother1 = options.stepMother1;
-    //     this.stepMother2 = options.stepMother2;
-    //     this.stepFather1 = options.stepFather1;
-    //     this.stepFather2 = options.stepFather2;
-    //     this.childOldest = options.childOldest;
-    //     this.childSecondOldest = options.childSecondOldest;
-    //     this.childThirdOldest = options.childThirdOldest;
-    //     this.childFourthOldest = options.childFourthOldest;
-    //     this.childFifthOldest = options.childFifthOldest;
-    //     this.childSixthOldest = options.childSixthOldest;
-    //     this.childOther = options.childOther;
-    //     this.spouse1 = options.spouse1;
-    //     this.spouse2 = options.spouse2;
-    //     this.spouse3 = options.spouse3;
-    //     this.spouseOther = options.spouseOther;
-    //   }
-    // }
 
     return (
       <div>
