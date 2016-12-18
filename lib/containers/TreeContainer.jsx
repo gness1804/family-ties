@@ -10,8 +10,8 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    addPerson: (id) => {
-      dispatch(addPerson(id));
+    addPerson: (firstName, lastName, mother, father) => {
+      dispatch(addPerson(firstName, lastName, mother, father));
     },
   };
 };

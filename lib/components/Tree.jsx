@@ -30,10 +30,14 @@ class Tree extends Component {
         spouseOther: this.spouseOther.value || '',
       };
     //add person by passing in just this object
-    this.props.addPerson('foo');
+    // console.log(this.firstName.value);
+    // console.log(this.props);
+    this.props.addPerson(this.firstName.value, this.lastName.value, this.mother.value, this.father.value);
   }
 
   render() {
+
+    // const addPerson = this.props;
 
 
     // class Node {
@@ -87,7 +91,7 @@ class Tree extends Component {
         <input placeholder="Spouse 2 (First and Last)" ref={(c) => { this.spouse2 = c; }} />
         <input placeholder="Spouse 3 (First and Last)" ref={(c) => { this.spouse3 = c; }} />
         <input placeholder="Other Spouse (First and Last)" ref={(c) => { this.spouseOther = c; }} />
-        <button onClick={ () => { this.addNewPerson() } }>Submit</button>
+        <button onClick={() => { this.addNewPerson() }} >Submit</button>
       </div>
     );
   }
