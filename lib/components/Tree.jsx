@@ -8,6 +8,7 @@ class Tree extends Component {
         masterId: `${this.firstName.value}${this.lastName.value}`,
         firstName: this.firstName.value || '',
         lastName: this.lastName.value || '',
+        fullName: `${this.firstName.value} ${this.lastName.value}`,
         gender: this.gender.value || '',
         maiden: this.maiden.value || '',
         mother: this.mother.value || '',
@@ -28,7 +29,7 @@ class Tree extends Component {
         spouse3: this.spouse3.value || '',
         spouseOther: this.spouseOther.value || '',
       });
-    console.log(person);
+    // console.log(person);
   }
 
   render() {
@@ -39,7 +40,7 @@ class Tree extends Component {
         this.masterId = options.masterId;
         this.firstName = options.firstName;
         this.lastName = options.lastName;
-        this.fullName = `${options.firstName} ${options.lastName}`;
+        this.fullName = options.fullName;
         this.gender = options.gender;
         this.maiden = options.maiden;
         this.mother = options.mother;
