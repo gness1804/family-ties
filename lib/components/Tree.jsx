@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 
 class Tree extends Component {
 
-  addNewPerson(Node) {
-    const person = new Node(
+  addNewPerson() {
+    const person =
       {
         masterId: `${this.firstName.value}${this.lastName.value}`,
         firstName: this.firstName.value || '',
@@ -28,40 +28,40 @@ class Tree extends Component {
         spouse2: this.spouse2.value || '',
         spouse3: this.spouse3.value || '',
         spouseOther: this.spouseOther.value || '',
-      });
+      };
     // console.log(person);
   }
 
   render() {
 
 
-    class Node {
-      constructor(options) {
-        this.masterId = options.masterId;
-        this.firstName = options.firstName;
-        this.lastName = options.lastName;
-        this.fullName = options.fullName;
-        this.gender = options.gender;
-        this.maiden = options.maiden;
-        this.mother = options.mother;
-        this.father = options.father;
-        this.stepMother1 = options.stepMother1;
-        this.stepMother2 = options.stepMother2;
-        this.stepFather1 = options.stepFather1;
-        this.stepFather2 = options.stepFather2;
-        this.childOldest = options.childOldest;
-        this.childSecondOldest = options.childSecondOldest;
-        this.childThirdOldest = options.childThirdOldest;
-        this.childFourthOldest = options.childFourthOldest;
-        this.childFifthOldest = options.childFifthOldest;
-        this.childSixthOldest = options.childSixthOldest;
-        this.childOther = options.childOther;
-        this.spouse1 = options.spouse1;
-        this.spouse2 = options.spouse2;
-        this.spouse3 = options.spouse3;
-        this.spouseOther = options.spouseOther;
-      }
-    }
+    // class Node {
+    //   constructor(options) {
+    //     this.masterId = options.masterId;
+    //     this.firstName = options.firstName;
+    //     this.lastName = options.lastName;
+    //     this.fullName = options.fullName;
+    //     this.gender = options.gender;
+    //     this.maiden = options.maiden;
+    //     this.mother = options.mother;
+    //     this.father = options.father;
+    //     this.stepMother1 = options.stepMother1;
+    //     this.stepMother2 = options.stepMother2;
+    //     this.stepFather1 = options.stepFather1;
+    //     this.stepFather2 = options.stepFather2;
+    //     this.childOldest = options.childOldest;
+    //     this.childSecondOldest = options.childSecondOldest;
+    //     this.childThirdOldest = options.childThirdOldest;
+    //     this.childFourthOldest = options.childFourthOldest;
+    //     this.childFifthOldest = options.childFifthOldest;
+    //     this.childSixthOldest = options.childSixthOldest;
+    //     this.childOther = options.childOther;
+    //     this.spouse1 = options.spouse1;
+    //     this.spouse2 = options.spouse2;
+    //     this.spouse3 = options.spouse3;
+    //     this.spouseOther = options.spouseOther;
+    //   }
+    // }
 
     return (
       <div>
@@ -86,7 +86,7 @@ class Tree extends Component {
         <input placeholder="Spouse 2 (First and Last)" ref={(c) => { this.spouse2 = c; }} />
         <input placeholder="Spouse 3 (First and Last)" ref={(c) => { this.spouse3 = c; }} />
         <input placeholder="Other Spouse (First and Last)" ref={(c) => { this.spouseOther = c; }} />
-        <button onClick={ () => { this.addNewPerson(Node) } }>Submit</button>
+        <button onClick={ () => { this.addNewPerson() } }>Submit</button>
       </div>
     );
   }
