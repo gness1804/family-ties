@@ -10,9 +10,9 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    addPerson: function (person) {
-      dispatch(addPerson(person));
-    }
+    addPerson: (id) => {
+      dispatch(addPerson(id));
+    },
   };
 };
 

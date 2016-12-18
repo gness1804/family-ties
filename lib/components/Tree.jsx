@@ -30,6 +30,7 @@ class Tree extends Component {
         spouseOther: this.spouseOther.value || '',
       };
     //add person by passing in just this object
+    this.props.addPerson('foo');
   }
 
   render() {
